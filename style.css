@@ -1,0 +1,119 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&family=Pliant:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,100..900;1,9..144,100..900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Outfit:wght@100..900&family=Pliant:ital,wght@0,100..900;1,100..900&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Outfit:wght@100..900&family=Pliant:ital,wght@0,100..900;1,100..900&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color:#F5F1E4;
+   font-family:'Montserrat',sans-serif;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.main{
+    display: flex;
+    background-color: white;
+    overflow: hidden;
+    width: 900px;
+    border-radius: 20px;
+}
+
+.img-container{
+    width: 50%;
+}
+
+.img-container img{
+     width:100%;
+    height:100%;
+    object-fit:cover;
+    display:block;
+}
+
+.container{
+    width: 50%;
+    padding: 70px 40px;
+}
+
+.cetagory{
+    color: #033D17;
+    letter-spacing: 5px;
+}
+
+h1{
+    font-family: 'Fraunces', sans-serif;
+    font-size: 2.9rem;
+    margin-top: 35px;
+    line-height: 49px;
+}
+
+.discription{
+    color: #6c7289;
+    font-size: 1.2rem;
+    word-spacing: 5px;
+    margin-top: 48px;
+}
+
+.price-box{
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    margin: 50px 0px;
+}
+
+.current-price{
+    font-family:'Fraunces',serif;
+    font-size:34px;
+    color:#3c8067;
+    font-weight:700;
+}
+
+.old-price{
+    color:#6c7289;
+    text-decoration:line-through;
+    font-size:14px;
+}
+
+.icon{
+    align-items: center;
+    margin-right: 10px;
+}
+
+.btn{
+    background: #033D17;
+    color: white;
+    padding:16px ;
+    width: 100%;
+    border: none;
+    border-radius: 10px;
+    font-weight:700;
+    font-size:15px;
+    cursor:pointer;
+    transition:.3s;
+}
+
+@media(max-width:650px){
+
+    body{
+        padding: 20px;
+    }
+    .main{
+        width:100%;
+        flex-direction:column;
+    }
+
+    .img-container,
+    .container{
+        width:100%;
+    }
+
+    .content h1{
+        font-size:32px;
+    }
+}
