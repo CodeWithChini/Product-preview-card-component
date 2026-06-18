@@ -86,11 +86,11 @@ h1{
 }
 
 .btn{
-    background: #033D17;
+    border: none;
+    background: #3c8067;
     color: white;
     padding:16px ;
     width: 100%;
-    border: none;
     border-radius: 10px;
     font-weight:700;
     font-size:15px;
@@ -98,13 +98,17 @@ h1{
     transition:.3s;
 }
 
+.btn:hover{
+    background:#033D17;
+}
+
 @media(max-width:650px){
 
     body{
-        padding: 20px;
+        padding: 25px;
     }
     .main{
-        width:100%;
+        max-width: 350px;
         flex-direction:column;
     }
 
@@ -113,7 +117,11 @@ h1{
         width:100%;
     }
 
+    .img-container{
+        height:240px;
+    }
+
     .content h1{
-        font-size:32px;
+        font-size:2rem;
     }
 }
