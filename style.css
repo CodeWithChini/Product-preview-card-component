@@ -21,7 +21,7 @@ body{
     display: flex;
     background-color: white;
     overflow: hidden;
-    width: 900px;
+    width: 56.25rem;
     border-radius: 20px;
 }
 
@@ -38,7 +38,7 @@ body{
 
 .container{
     width: 50%;
-    padding: 70px 40px;
+    padding: 4.375rem 2.5rem;
 }
 
 .cetagory{
@@ -69,7 +69,7 @@ h1{
 
 .current-price{
     font-family:'Fraunces',serif;
-    font-size:34px;
+    font-size:2rem;
     color:#3c8067;
     font-weight:700;
 }
@@ -95,14 +95,22 @@ h1{
     font-weight:700;
     font-size:15px;
     cursor:pointer;
-    transition:.3s;
+    transition:0.3s;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  * {
+    transition: none !important;
+    animation: none !important;
+  }
 }
 
 .btn:hover{
     background:#033D17;
 }
 
-@media(max-width:650px){
+@media(min-width: 40.625rem){
+    /* 650px / 16 = 40.625rem */
 
     body{
         padding: 25px;
