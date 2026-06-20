@@ -36,10 +36,12 @@ body{
     display:block;
 }
 
+
 .container{
     width: 50%;
     padding: 4.375rem 2.5rem;
 }
+
 
 .cetagory{
     color: #033D17;
@@ -49,22 +51,22 @@ body{
 h1{
     font-family: 'Fraunces', sans-serif;
     font-size: 2.9rem;
-    margin-top: 2.1875rem;    /* 35px */
+    margin-top: 2.1875rem;
     line-height: 3.0625rem;
 }
 
 .discription{
     color: #6c7289;
     font-size: 1.2rem;
-   word-spacing: 0.3125rem;  /* 5px */
-    margin-top: 3rem;         /* 48px */
+   word-spacing: 0.3125rem;
+    margin-top: 3rem;
 }
 
 .price-box{
     display: flex;
     align-items: center;
-    gap: 1.25rem;             /* 20px */
-    margin: 3.125rem 0;       /* 50px */
+    gap: 1.25rem;
+    margin: 3.125rem 0;
 }
 
 .current-price{
@@ -101,15 +103,19 @@ h1{
     background:#033D17;
 }
 
-@media(min-width: 40.625rem){
+
+
+@media(max-width: 650px){
     /* 650px / 16 = 40.625rem */
 
-    body{
+     body{
         padding:  1.5625rem;
     }
+
     .main{
+        flex-direction: column;
+        width: 100%;
         max-width: 21.875rem;
-        flex-direction:column;
     }
 
     .img-container,
@@ -117,11 +123,22 @@ h1{
         width:100%;
     }
 
-    .img-container{
-        height:0.9375rem ;
+.container{
+        padding: 1.5rem;
     }
 
-    .content h1{
-        font-size:2rem;
+    h1{
+        font-size: 2rem;
+        line-height: 2rem;
+        margin-top: 1rem;
+    }
+
+     .discription{
+        margin-top: 1rem;
+        font-size: 0.9rem;
+    }
+
+    .price-box{
+        margin: 1.5rem 0;
     }
 }
